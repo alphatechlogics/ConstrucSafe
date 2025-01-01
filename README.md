@@ -1,7 +1,5 @@
 # 🏗️🔒 **ConstrucSafe AI**: AI-Powered Safety Detection for Construction Sites
 
-![ConstrucSafe AI Banner](https://via.placeholder.com/800x200.png?text=ConstrucSafe+AI+Banner)
-
 ---
 
 ## 🚀 **Table of Contents**
