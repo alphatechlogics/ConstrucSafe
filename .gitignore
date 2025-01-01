@@ -136,8 +136,6 @@ runs/
 # Ultralytics YOLOv8
 runs/
 weights/
-best.pt
-last.pt
 
 # Temporary files
 tmp/
