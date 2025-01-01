@@ -21,21 +21,18 @@ def create_video_writer(video_cap, output_filename):
     return writer
 
 def reencode_video(input_path, output_path):
-    """
-    Re-encodes the video using FFmpeg to ensure compatibility.
-    """
+    ffmpeg_binary = os.path.join(os.getcwd(), 'bin', 'ffmpeg')  # Adjust the path as needed
     command = [
-        'ffmpeg',
-        '-y',  # Overwrite output files without asking
-        '-i', input_path,  # Input file
-        '-c:v', 'libx264',  # Video codec
-        '-preset', 'fast',  # Encoding speed
-        '-crf', '22',  # Quality parameter (lower is better)
-        '-c:a', 'aac',  # Audio codec
-        '-b:a', '128k',  # Audio bitrate
+        ffmpeg_binary,
+        '-y',
+        '-i', input_path,
+        '-c:v', 'libx264',
+        '-preset', 'fast',
+        '-crf', '22',
+        '-c:a', 'aac',
+        '-b:a', '128k',
         output_path
     ]
-
     try:
         subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         return True
