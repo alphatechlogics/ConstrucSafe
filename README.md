@@ -56,8 +56,8 @@ Follow these steps to set up ConstrucSafe AI on your local machine:
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/ConstrucSafeAI.git
-cd ConstrucSafeAI
+git clone https://github.com/alphatechlogics/ConstrucSafe.git
+cd ConstrucSafe
 ```
 
 ### 2. Create a Virtual Environment
